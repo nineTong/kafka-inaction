@@ -16,6 +16,7 @@ public class ConsumerSyncCommit
 
     public static void main(String[] args)
     {
+        //
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(loadProp());
         consumer.subscribe(Collections.singletonList("test12"));
 
