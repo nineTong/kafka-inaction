@@ -43,8 +43,8 @@ public class ConsumerSyncCommit
             });
 
             /**
-             * can retry
-             * block
+             * can retry，同步提交相当于一个producer向__consumer_topic发送数据，如果达到重复次数，或不可恢复错误，就会失败
+             * block，会阻塞，在commit期间不会消费或处理新数据
              */
             consumer.commitSync();
         }

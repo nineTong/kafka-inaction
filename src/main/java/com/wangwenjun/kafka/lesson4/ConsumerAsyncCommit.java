@@ -9,12 +9,7 @@ import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/3/31
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class ConsumerAsyncCommit
 {
 

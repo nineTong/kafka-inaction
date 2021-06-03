@@ -8,12 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Collections;
 import java.util.Properties;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/17
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class CommitOffsetBothAsynSync
 {
     private static final Logger LOG = LoggerFactory.getLogger(CommitOffsetBothAsynSync.class);
@@ -35,11 +30,13 @@ public class CommitOffsetBothAsynSync
                     LOG.info("value:{}", record.value());
                     LOG.info("key:{}", record.key());
                 });
-
+                /**
+                 * 即使时是可恢复的错误，也不会重复提交。
+                 * 但是如果提交失败就会使用finally进行同步提交，会尝试多次提交
+                 */
                 consumer.commitAsync();
             }
-        } finally
-        {
+        } finally {
             consumer.commitSync();
         }
     }

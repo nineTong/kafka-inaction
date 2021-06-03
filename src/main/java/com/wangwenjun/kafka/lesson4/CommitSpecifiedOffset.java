@@ -12,12 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/3/31
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class CommitSpecifiedOffset
 {
 
@@ -41,7 +36,10 @@ public class CommitSpecifiedOffset
                 //biz handler.
                 LOG.info("Partition:{},offset:{}", record.partition(), record.offset());
             });
-
+            /**
+             * 使用场景：如果在100条数据中，处理到第23条，发现处理有问题，不能再继续向下处理了，需要数据回放
+             * 那就提交23
+             */
             consumer.commitSync(offset);
         }
     }
