@@ -2,6 +2,8 @@ package com.wangwenjun.kafka.lesson4.internal;
 
 /**
  * 4 byte
+ *
+ * 在内存中分配4个字节，这4个字节中存放string类型对应的长度上限
  * [4][4][10][4][20]
  *
  *
@@ -10,7 +12,10 @@ package com.wangwenjun.kafka.lesson4.internal;
  */
 public class User
 {
-
+    /**
+     * int 类型在java中占4字节
+     * string则是可变长类型
+     */
     private int id;
 
     private String name;

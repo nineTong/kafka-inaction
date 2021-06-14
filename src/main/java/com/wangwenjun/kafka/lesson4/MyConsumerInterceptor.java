@@ -13,12 +13,7 @@ import java.util.Set;
 
 import static java.util.stream.Collectors.toList;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/4/1
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class MyConsumerInterceptor implements ConsumerInterceptor<String, String>
 {
     @Override

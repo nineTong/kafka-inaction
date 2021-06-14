@@ -10,12 +10,7 @@ import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/17
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class SimpleConsumerWithInterceptor
 {
     private static final Logger LOG = LoggerFactory.getLogger(SimpleConsumerWithInterceptor.class);
@@ -49,6 +44,10 @@ public class SimpleConsumerWithInterceptor
         props.put("client.id", "demo-consumer-client");
         props.put("auto.offset.reset", "earliest");
         props.put("auto.commit.interval.ms", "10000");
+        /**
+         * 如果配置了拦截器，那么拦截器将会在fetch后poll之前使用拦截器
+         * 配置拦截器后可以选择需要的record，但在提交commit时，依然会将本次fetch到的所有数据提交commit
+         */
 //        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, "com.wangwenjun.kafka.lesson4.MyConsumerInterceptor");
         return props;
     }

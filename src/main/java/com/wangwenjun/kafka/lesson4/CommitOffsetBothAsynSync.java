@@ -37,6 +37,9 @@ public class CommitOffsetBothAsynSync
                 consumer.commitAsync();
             }
         } finally {
+            /**
+             * 假设在处理过程中，jvm crash了，那么offset是无法提交的，需要程序再次消费时具有幂等性
+             */
             consumer.commitSync();
         }
     }

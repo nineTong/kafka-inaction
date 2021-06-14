@@ -6,12 +6,7 @@ import org.apache.kafka.common.serialization.Deserializer;
 import java.nio.ByteBuffer;
 import java.util.Map;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/4/1
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class UserDeserializer implements Deserializer<User>
 {
     @Override

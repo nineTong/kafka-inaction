@@ -12,10 +12,11 @@ public class UserSerializer implements Serializer<User>
     public void configure(Map<String, ?> configs, boolean isKey)
     {
         //do nothing
+        //生命周期中调用一次
     }
 
     /**
-     * 生成这序列化失败时不可恢复错误
+     * 生成序列化失败时不可恢复错误，比如给定一个不存在的字符集
      * @param topic
      * @param data
      * @return

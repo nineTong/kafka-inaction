@@ -13,12 +13,7 @@ import java.util.stream.IntStream;
 
 import static org.apache.kafka.clients.producer.ProducerConfig.INTERCEPTOR_CLASSES_CONFIG;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/15
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class SyncSenderWithInterceptor
 {
 
