@@ -13,17 +13,16 @@ import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/17
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class RebalanceConsumer
 {
     private static final Logger LOG = LoggerFactory.getLogger(RebalanceConsumer.class);
 
-
+    /**
+     * 在consumer收到rebalance消息时，consumer会将poll数据全部或部分处理完，然后进行rebalance
+     * rebalance使consumer的poll动作停止
+     * @param args
+     */
     public static void main(String[] args)
     {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(loadProp());
