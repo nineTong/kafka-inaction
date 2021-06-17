@@ -11,12 +11,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.stream.IntStream;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/15
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class SyncSender
 {
 
@@ -53,6 +48,12 @@ public class SyncSender
     {
         final Properties props = new Properties();
         props.put("bootstrap.servers", "192.168.88.108:9092");
+
+        /**
+         * 现在指定topic和partition发送数据，但是bootstrap中的地址并不是partition leader所在的机器，同时
+         * 该机器上的metadata缓存失效了，那么produce将收到一个异常，并重发metadata request，因为该错误是
+         * 一个可重试错误
+         */
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         return props;
