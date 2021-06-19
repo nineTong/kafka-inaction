@@ -51,6 +51,8 @@ public class SyncSender
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("acks", "0");
+        props.put("uncelan.leader.election.enable", "false");
+        props.put("min.insync.replicas", "2");
         return props;
     }
 }
