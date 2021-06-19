@@ -8,12 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Collections;
 import java.util.Properties;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/17
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class SimpleConsumer
 {
     private static final Logger LOG = LoggerFactory.getLogger(SimpleConsumer.class);

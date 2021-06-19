@@ -11,12 +11,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.stream.IntStream;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/15
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class SyncSender
 {
 

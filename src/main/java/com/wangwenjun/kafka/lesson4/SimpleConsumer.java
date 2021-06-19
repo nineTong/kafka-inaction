@@ -46,7 +46,7 @@ public class SimpleConsumer
 
                 if (cnt >= 3)
                     Runtime.getRuntime().halt(-1);
-                    //halt是为了直接终止程序，不给kafka任何机会触发钩子
+                    //halt是为了直接终止程序jvm，不给kafka任何机会触发钩子
                     //这种情况下容易因为没有提交offset造成重复消费
                     //解决重复消费就是要解决消息消费的幂等性
             });
