@@ -1,15 +1,10 @@
-package com.wangwenjun.kafka.lesson3;
+package com.bobian.kafka.lesson3;
 
 import org.apache.kafka.common.serialization.Serializer;
 
 import java.util.Map;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/2/16
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class MessageSerializer implements Serializer<Message>
 {
     @Override
