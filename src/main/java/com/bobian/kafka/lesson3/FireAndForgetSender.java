@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson3;
+package com.bobian.kafka.lesson3;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -22,6 +22,7 @@ public class FireAndForgetSender
         {
             ProducerRecord<String, String> record =
                     new ProducerRecord<>("fire_and_forget_sender", String.valueOf(i), "hello " + i);
+            // ProducerRecord类有多个构造函数，可以用来指定各种信息
             producer.send(record);
             LOGGER.info("The message is send done and the key is {}", i);
         });
