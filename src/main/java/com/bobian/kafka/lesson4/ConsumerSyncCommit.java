@@ -2,10 +2,14 @@ package com.wangwenjun.kafka.lesson4;
 
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import org.apache.kafka.common.TopicPartition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -33,8 +37,13 @@ public class ConsumerSyncCommit
                 LOG.info("key:{}", record.key());
                 /**
                  * 如果担心一批中处理了99条后程序终止了，没有提交offset，可以每条提交一次，这样最多有一条没有提交
-                 * consumer.commitSync();
+                 *
+                 *TopicPartition tp = new TopicPartition(record.topic(), record.partition());
+                 *OffsetAndMetadata om = new OffsetAndMetadata(record.offset()+1);
+                 *
+                 *consumer.commitSync(Collections.singletonMap(tp,om));
                  */
+
 //                if (count.incrementAndGet() == 1000)
 //                {
 //                    consumer.commitSync();
