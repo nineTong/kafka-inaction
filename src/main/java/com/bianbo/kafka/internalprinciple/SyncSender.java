@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson5;
+package com.bianbo.kafka.internalprinciple;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

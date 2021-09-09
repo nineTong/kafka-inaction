@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson4.internal;
+package com.bianbo.kafka.sender.internal;
 
 /**
  * 4 byte

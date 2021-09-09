@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson4;
+package com.bianbo.kafka.sender;
 
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

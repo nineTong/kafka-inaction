@@ -1,6 +1,6 @@
-package com.wangwenjun.kafka.lesson4;
+package com.bianbo.kafka.sender;
 
-import com.wangwenjun.kafka.lesson4.internal.User;
+import com.bianbo.kafka.sender.internal.User;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.slf4j.Logger;

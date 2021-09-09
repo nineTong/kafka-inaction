@@ -1,4 +1,4 @@
-package com.bobian.kafka.lesson3;
+package com.bianbo.kafka.producer;
 
 
 public class Message

@@ -1,5 +1,6 @@
-package com.wangwenjun.kafka.lesson4.internal;
+package com.bianbo.kafka.sender.internal;
 
+import com.bianbo.kafka.sender.internal.User;
 import org.apache.kafka.common.serialization.Serializer;
 
 import java.nio.ByteBuffer;

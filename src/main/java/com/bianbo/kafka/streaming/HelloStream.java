@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson11;
+package com.bianbo.kafka.streaming;
 
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
@@ -8,12 +8,7 @@ import org.apache.kafka.streams.kstream.KStreamBuilder;
 
 import java.util.Properties;
 
-/***************************************
- * @author:Alex Wang
- * @Date:2018/4/29
- * QQ: 532500648
- * QQ群:463962286
- ***************************************/
+
 public class HelloStream
 {
     public static void main(String[] args)

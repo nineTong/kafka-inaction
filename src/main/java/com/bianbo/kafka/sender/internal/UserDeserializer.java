@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson4.internal;
+package com.bianbo.kafka.sender.internal;
 
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;

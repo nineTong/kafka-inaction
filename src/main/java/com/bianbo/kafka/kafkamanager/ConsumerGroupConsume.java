@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson10;
+package com.bianbo.kafka.kafkamanager;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

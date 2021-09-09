@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson6;
+package com.bianbo.kafka.reliabletransfer;
 
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

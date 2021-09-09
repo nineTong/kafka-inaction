@@ -1,4 +1,4 @@
-package com.wangwenjun.kafka.lesson3;
+package com.bianbo.kafka.producer;
 
 import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;
