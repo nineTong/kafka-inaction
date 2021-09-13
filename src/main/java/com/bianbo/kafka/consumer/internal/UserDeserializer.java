@@ -1,5 +1,6 @@
-package com.bianbo.kafka.sender.internal;
+package com.bianbo.kafka.consumer.internal;
 
+import com.bianbo.kafka.consumer.internal.User;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;
 

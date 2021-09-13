@@ -1,4 +1,4 @@
-package com.bianbo.kafka.sender;
+package com.bianbo.kafka.consumer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

@@ -1,4 +1,4 @@
-package com.bianbo.kafka.sender.internal;
+package com.bianbo.kafka.consumer.internal;
 
 /**
  * 4 byte

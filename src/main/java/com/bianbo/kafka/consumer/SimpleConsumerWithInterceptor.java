@@ -1,6 +1,5 @@
-package com.bianbo.kafka.sender;
+package com.bianbo.kafka.consumer;
 
-import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.slf4j.Logger;
@@ -8,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 import java.util.Properties;
-import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class SimpleConsumerWithInterceptor
